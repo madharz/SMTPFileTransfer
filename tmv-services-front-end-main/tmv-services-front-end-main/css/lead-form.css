@@ -1,0 +1,224 @@
+.lead-form.section {
+    background-color: var(--dark-blue);
+    color: var(--contrast-text);
+    overflow-x: hidden;
+}
+
+.lead-form .container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.lead-form .form-container {
+    max-width: 430px;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.lead-form .image {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.lead-form .form-container .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px 0;
+}
+
+.lead-form .title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.lead-form .text {
+    font-size: 20px;
+}
+
+.lead-form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.lead-form .additional,
+.lead-form .form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    & input::-webkit-calendar-picker-indicator {
+        width: 30%;
+        opacity: 0;
+    }
+}
+
+.lead-form .date-picker input,
+.lead-form .select-services select,
+.lead-form .additional .comment,
+.lead-form .field {
+    width: 100%;
+    padding: 16px;
+
+    border: 1px solid var(--contrast-text);
+    background-color: transparent;
+
+    color: var(--contrast-text);
+    font-size: 16px;
+    font-weight: 400;
+
+    &::placeholder {
+        color: var(--contrast-text);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &:focus {
+        color: var(--text-dark);
+        background-color: var(--active-input-bg);
+    }
+
+    &:focus::placeholder {
+        color: var(--text-dark);
+    }
+}
+
+.lead-form .date-picker,
+.lead-form .select-services {
+    position: relative;
+}
+
+.lead-form .select-services select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    & option {
+        background-color: var(--contrast-text);
+        color: var(--dark-blue)
+    }
+}
+
+.lead-form .date-picker svg,
+.lead-form .select-services svg {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    pointer-events: none;
+
+    fill: var(--contrast-text);
+}
+
+
+.lead-form .additional .comment {
+    display: block;
+    flex-shrink: 1;
+    height: 100px;
+
+    resize: none;
+}
+
+.lead-form .submit-btn {
+    width: 100%;
+    padding: 8px;
+
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+
+    background-color: var(--contrast-text);
+}
+
+.filepond--item {
+    width: calc(50% - 0.5em);
+}
+
+.filepond--root {
+    border: solid 1px var(--contrast-text);
+}
+
+.filepond--credits {
+    transform: translateY(-16px) !important;
+    top: 0;
+    margin: 0 !important;
+}
+
+
+.lead-form .filepond--panel-root {
+    min-height: 100px;
+    background-color: transparent;
+    border: none;
+    color: var(--contrast-text);
+}
+
+.filepond--drop-label.filepond--drop-label label {
+    color: var(--contrast-text);
+}
+
+.filepond--root .filepond--drop-label {
+    height: 100%;
+}
+
+@media (min-width: 430px) {
+    .lead-form .image {
+        width: 100%;
+        max-width: 834px;
+    }
+}
+
+@media (min-width: 680px) {
+    .lead-form .form-container {
+        max-width: 680px;
+    }
+
+    .lead-form .form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .lead-form .form-element,
+    .lead-form .additional {
+        width: 312px;
+    }
+
+
+    .filepond--root {
+        min-height: 100px;
+        max-height: 152px;
+        width: 312px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 834px) {
+    .lead-form.section {
+        display: flex;
+    }
+
+    .lead-form .form-container {
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    .lead-form .form {
+        width: 648px;
+    }
+
+    .lead-form .image {
+        position: absolute;
+        left: 0;
+        transform: translateX(680px);
+        max-height: 100%;
+    }
+}

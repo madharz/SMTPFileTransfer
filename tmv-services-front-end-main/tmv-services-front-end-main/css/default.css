@@ -1,0 +1,74 @@
+:root {
+    --dark-blue: #076D94;
+    --contrast-text: #fff;
+    --text-dark: #181833;
+    --hover-button: #0D4361;
+    --active-input-bg: #CDE9F9;
+
+    --red: #DD1715;
+    --green: #179D2E;
+    --blue: #0177B8;
+    --orange: #F5AF23;
+
+    --transition: 300ms ease-in-out;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    width: auto;
+    max-height: 100%;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial,
+        sans-serif;
+    ;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    color: currentColor;
+    cursor: pointer;
+}

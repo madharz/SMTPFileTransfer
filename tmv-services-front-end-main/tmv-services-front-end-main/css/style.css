@@ -1,0 +1,8 @@
+@import 'modern-normalize/modern-normalize.css';
+@import 'filepond/dist/filepond.min.css';
+@import "./default.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./services.css";
+@import "./lead-form.css";
+@import "./footer.css"

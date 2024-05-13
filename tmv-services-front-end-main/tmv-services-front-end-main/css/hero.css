@@ -1,0 +1,78 @@
+.hero.section {
+    padding: 140px 0;
+
+    background-image: linear-gradient(#00000066, #00000066), url("../img/hero-background-mob.jpg"), linear-gradient(134.94deg, #F5AF23 0%, #F02E2C 34.93%, #0177B8 100%);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+
+    color: var(--contrast-text);
+
+    text-align: center;
+    align-items: center;
+}
+
+.hero .title {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero .text {
+    font-size: 20px;
+}
+
+.hero .button-order {
+    display: block;
+    width: fit-content;
+    padding: 10px 22px;
+
+    background-color: #0177B8;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: background-color var(--transition);
+}
+
+.hero .button-order:hover,
+.hero .button-order:focus {
+    background-color: var(--hover-button);
+}
+
+@media (max-width: 380px) {
+    .hero .title {
+        font-size: 32px;
+    }
+
+    .hero .button-order {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 431px) {
+    .hero.section {
+        background-image: linear-gradient(#00000066, #00000066), url("../img/hero-background-tab.jpg"), linear-gradient(134.94deg, #F5AF23 0%, #F02E2C 34.93%, #0177B8 100%);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero.section {
+        background-image: linear-gradient(#00000066, #00000066), url("../img/hero-background-desk.jpg"), linear-gradient(134.94deg, #F5AF23 0%, #F02E2C 34.93%, #0177B8 100%);
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero.section {
+        background-size: cover;
+    }
+}

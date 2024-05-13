@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "filepond": "^4.31.1",
+    "filepond-plugin-file-validate-type": "^1.2.9",
+    "modern-normalize": "^2.0.0"
+  }
+}

@@ -21,7 +21,7 @@ namespace SMTPFileTransfer.Services
                 message.From = new MailAddress(_emailConfiguration.From);
                 message.To.Add(formData.Email);
                 message.Subject = "Нові дані від користувача";
-                message.Body = $"Ім'я: {formData.Name}\nEmail: {formData.Email}\nТелефон: {formData.PhoneNumber}\nАдреса: {formData.Address}\nПослуга: {formData.Service}\nДата: {formData.ChooseDate}\nДетальна інформація: {formData.DetailedInformation}";
+                message.Body = $"Ім'я: {formData.Name}\nEmail: {formData.Email}\nТелефон: {formData.PhoneNumber}\nАдреса: {formData.Address}\nПослуга: {formData.Service}\nДата: {formData.Date}\nДетальна інформація: {formData.Comment}";
 
                 foreach (var filePath in filePaths)
                 {

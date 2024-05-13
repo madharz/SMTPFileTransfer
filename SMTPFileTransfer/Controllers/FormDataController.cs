@@ -27,7 +27,7 @@ namespace SMTPFileTransfer.Controllers
                 }
 
                 // Перевірка, чи властивість Files не є нульовою перед її використанням
-                if (formData.Files != null)
+                if (false)
                 {
                     // Виклик сервісу для обробки даних з форми
                     await _formDataProcessingService.ProcessFormData(formData);
